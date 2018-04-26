@@ -149,13 +149,8 @@ get_header(); ?>
 </section>
 <?php get_footer(); ?>
 <script>
-$(document).ready(function(){
-	//alert('newwwwwwww');
-    $(".comment_submit_class").click(function(){
-        
-        //console.log($(this).attr('id'));
-    	// This does the ajax request
-    	
+$(document).ready(function(){	
+    $(".comment_submit_class").click(function(){     
     	var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
     	var user_msg = $("#user_msg"+$(this).attr('id')).val();
     	var author_name = $("#author_name"+$(this).attr('id')).val();
